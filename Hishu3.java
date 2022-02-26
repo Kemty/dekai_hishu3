@@ -110,7 +110,7 @@ public class Hishu3 {
 
 	}
 	
-	public static double[][] mxm(double[][] matrix1, double[][] matrix2) {
+	public static double[][] mxm(double[][] matrix1, double[][] matrix2) { # 行列の積
 		int n1 = matrix1.length;
 		int m1 = matrix1[0].length;
 		int m2 = matrix2[0].length;
@@ -128,7 +128,7 @@ public class Hishu3 {
 		return newmatrix;
 	}
 	
-	public static double[][] mpm(double[][] mat1, double[][] mat2) {
+	public static double[][] mpm(double[][] mat1, double[][] mat2) { # 行列の和
 		int sizeh = mat1.length, sizew = mat1[0].length;
 		double[][] ret = new double[sizeh][sizew];
 		for(int i = 0; i < sizeh; i++) {
@@ -137,7 +137,7 @@ public class Hishu3 {
 		return ret;
 	}
 	
-	public static double[][] sxm(double sch, double[][] mat) {
+	public static double[][] sxm(double sch, double[][] mat) { #スカラーと行列の積
 		int sizeh = mat.length, sizew = mat[0].length;
 		double[][] ret = new double[sizeh][sizew];
 		for(int i = 0; i < sizeh; i++) {
@@ -146,7 +146,7 @@ public class Hishu3 {
 		return ret;
 	}
 	
-	public static double tr(double[][] matrix) {
+	public static double tr(double[][] matrix) { # 行列のトレース
 		int n = matrix.length;
 		double s = 0;
 		for(int i = 0; i < n; i++) {
@@ -155,7 +155,7 @@ public class Hishu3 {
 		return s;
 	}
 	
-	public static double[][] turned(double[][] matrix) {
+	public static double[][] turned(double[][] matrix) { # 行列の転置
 		int sizeh = matrix.length, sizew = matrix[0].length;
 		double[][] ret = new double[sizew][sizeh];
 		for(int i = 0; i < sizeh; i++) {
@@ -164,7 +164,7 @@ public class Hishu3 {
 		return ret;
 	}
 	
-	public static void printm(double[][] matrix) {
+	public static void printm(double[][] matrix) { # 行列をコンソールに出力
 		int n = matrix.length;
 		int m = matrix[0].length;
 		for(int i = 0; i < n; i++) {
